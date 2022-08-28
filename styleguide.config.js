@@ -3,6 +3,7 @@ const { version } = require('./package');
 
 module.exports = {
 	title: "Radix Component Library",
+	serverPort: 3020,
 	webpackConfig: {
 		module: {
 			rules: [
