@@ -1,6 +1,9 @@
 module.exports = {
 	title: "Radix Component Library",
 	serverPort: 3020,
+	template: {
+		favicon: "https://raw.githubusercontent.com/Cool-Runningz/radix-component-library/main/favicon.ico",
+	},
 	webpackConfig: {
 		module: {
 			rules: [
