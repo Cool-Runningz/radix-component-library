@@ -1,29 +1,33 @@
 
 ```js
+const contentStyles = {
+  height: "30rem"
+};
+
 const TABS = [
 	{
     id: 'tab-1',
 		label: "FREE",
 		value: "free",
-		content: <b>Accessible to everyone - $0 a month </b>
+		content: <div style={contentStyles}>Accessible to everyone - $0 a month </div>
 	},
 	{
     id: 'tab-2',
 		label: "TEAM",
 		value: "team",
-		content: <b>Monthly team sessions</b>
+		content: <div style={contentStyles}>Monthly team sessions</div>
 	},
 	{
     id: 'tab-3',
 		label: "PROFESSIONAL",
 		value: "professional",
-		content: <b>The Professional tier</b>
+		content: <div style={contentStyles}>The Professional tier</div>
 	},
 	{
     id: 'tab-4',
 		label: "ENTERPRISE",
 		value: "enterprise",
-		content: <b>The Enterprise tier</b>
+		content: <div style={contentStyles}>Enterprise - Custom Pricing</div>
 	}
 ];
 const [tabValue, setTabValue] = React.useState(TABS[0].value);
