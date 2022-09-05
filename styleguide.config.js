@@ -1,6 +1,3 @@
-const path = require('path');
-const { version } = require('./package');
-
 module.exports = {
 	title: "Radix Component Library",
 	serverPort: 3020,
@@ -18,5 +15,6 @@ module.exports = {
 				},
 			],
 		},
+		devtool: "eval-source-map"
 	},
 };
