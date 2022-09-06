@@ -1,0 +1,46 @@
+
+.rootTabs {
+    background-color: white;
+  }
+
+.listTabs {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.triggerTabs {
+    color: #764abc;
+    font-family: "Avenir";
+    background: none;
+    border: none;
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.5;
+    padding: 30px;
+    position: relative;
+}
+
+.triggerTabs[data-state="active"] {
+    opacity: 1;
+}
+
+.triggerTabs[data-state="active"]::after {
+    background-color: #764abc;
+    border-radius: 12px;
+    bottom: -4px;
+    content: "";
+    height: 6px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.contentTabs {
+    border-top: 3px solid hsla(0, 0%, 44%, 0.15);
+    padding: 30px 55px;
+ }
