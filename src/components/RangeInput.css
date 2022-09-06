@@ -1,4 +1,4 @@
-.root {
+.rootSlider {
     display: flex;
     align-items: center;
     position: relative;
@@ -6,7 +6,7 @@
     max-width: 30rem;
 }
 
-.track {
+.trackSlider {
     background-color: #fafafa;
     border: 1px solid #d3d3d3;
     position: relative;
@@ -15,14 +15,14 @@
     height: 1rem;
 }
 
-.range {
+.rangeSlider {
     position: absolute;
     background: linear-gradient(90deg,#252678,#764abc);
     height: 100%;
     border-radius: 10px;
 }
 
-.thumb {
+.thumbSlider {
     display: block;
     width: 20px;
     height: 20px;
@@ -31,10 +31,10 @@
     border: 1px solid #d9d9d9;
 }
 
-.thumb:hover {
+.thumbSlider:hover {
     cursor: pointer;
 }
 
-.thumb:focus {
+.thumbSlider:focus {
     outline: 1px solid white;
 }

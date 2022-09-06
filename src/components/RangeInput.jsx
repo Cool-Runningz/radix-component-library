@@ -5,12 +5,16 @@ import * as SliderPrimitive from '@radix-ui/react-slider';
 
 const RangeInput = (props) => {
     return (
-        <SliderPrimitive.Root className="root"
-            value={props.value} onValueChange={props.onValueChange}>
-            <SliderPrimitive.Track className="track">
-                <SliderPrimitive.Range className="range" />
+        <SliderPrimitive.Root
+            className="rootSlider"
+            value={props.value}
+            onValueChange={props.onValueChange}
+        >
+            <SliderPrimitive.Track className="trackSlider">
+                <SliderPrimitive.Range className="rangeSlider" />
             </SliderPrimitive.Track>
-            <SliderPrimitive.Thumb className="thumb" aria-label={props.label} />
+            <SliderPrimitive.Thumb className="thumbSlider" aria-label={props.label}
+            />
         </SliderPrimitive.Root>
     )
 }
