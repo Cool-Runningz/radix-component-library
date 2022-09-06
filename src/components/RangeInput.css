@@ -1,0 +1,40 @@
+.root {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 1.5rem;
+    max-width: 30rem;
+}
+
+.track {
+    background-color: #fafafa;
+    border: 1px solid #d3d3d3;
+    position: relative;
+    flex-grow: 1;
+    border-radius: 10px;
+    height: 1rem;
+}
+
+.range {
+    position: absolute;
+    background: linear-gradient(90deg,#252678,#764abc);
+    height: 100%;
+    border-radius: 10px;
+}
+
+.thumb {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #764abc;
+    border-radius: 30px;
+    border: 1px solid #d9d9d9;
+}
+
+.thumb:hover {
+    cursor: pointer;
+}
+
+.thumb:focus {
+    outline: 1px solid white;
+}
